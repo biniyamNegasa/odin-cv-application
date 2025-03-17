@@ -8,14 +8,19 @@ function isObjectEmpty(obj) {
   return true;
 }
 
-function Home({ setPage }) {
+function Home({ setPage, handlePrint }) {
   const allDetails = JSON.parse(localStorage.getItem("allDetails"));
   const handleClick = () => {
     setPage("form");
   };
   return (
     <div className="home">
-      <button onClick={handleClick}>Edit</button>
+      <div className="submit-button">
+        <button className="edit-button" onClick={handleClick}>
+          Edit
+        </button>
+        <button onClick={handlePrint}>Print</button>
+      </div>
       <Heading {...allDetails} />
       <div>
         {!isObjectEmpty(allDetails.education) && <h2>Education</h2>}
