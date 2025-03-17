@@ -1,0 +1,41 @@
+.form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-section > div {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.heading-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

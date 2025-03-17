@@ -1,0 +1,13 @@
+.website-input {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.website-input > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
