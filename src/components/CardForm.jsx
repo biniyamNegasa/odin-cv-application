@@ -15,9 +15,12 @@ function CardForm({
       ...data,
       [headingId]: {
         ...data[headingId],
-        detail: {
-          ...data[headingId].detail,
-          [Date.now()]: "",
+        [currentId]: {
+          ...data[headingId][currentId],
+          detail: {
+            ...data[headingId][currentId].detail,
+            [Date.now()]: "",
+          },
         },
       },
     });

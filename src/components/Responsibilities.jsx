@@ -3,8 +3,8 @@ import "../styles/Responsibilities.css";
 function Responsibilities({ responsibilities }) {
   return (
     <ul>
-      {responsibilities.map((responsibility) => (
-        <li>{responsibility}</li>
+      {Object.entries(responsibilities).map((responsibility) => (
+        <li key={responsibility[0]}>{responsibility[1]}</li>
       ))}
     </ul>
   );

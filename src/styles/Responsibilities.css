@@ -5,4 +5,5 @@ ul {
 
 li {
   list-style: circle;
+  width: 60ch;
 }

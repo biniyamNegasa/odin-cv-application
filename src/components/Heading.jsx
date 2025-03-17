@@ -10,25 +10,25 @@ function Heading({ name, title, email, github, linkedin, twitter, telegram }) {
     <div className="heading">
       <Title name={name} title={title} />
       <LinksList>
-        <ExternalLink url={`mailto:${email.url}`}>
+        <ExternalLink url={`mailto:${email}`}>
           <FiMail />
-          <span>{email.label}</span>
+          <span>{email}</span>
         </ExternalLink>
         <ExternalLink url={github.url}>
           <FaGithub />
-          <span>{github.label}</span>
+          <span>{github.username}</span>
         </ExternalLink>
         <ExternalLink url={linkedin.url}>
           <FaLinkedin />
-          <span>{linkedin.label}</span>
+          <span>{linkedin.username}</span>
         </ExternalLink>
         <ExternalLink url={twitter.url}>
           <FaXTwitter />
-          <span>{twitter.label}</span>
+          <span>{twitter.username}</span>
         </ExternalLink>
         <ExternalLink url={telegram.url}>
           <FaTelegram />
-          <span>{telegram.label}</span>
+          <span>{telegram.username}</span>
         </ExternalLink>
       </LinksList>
     </div>

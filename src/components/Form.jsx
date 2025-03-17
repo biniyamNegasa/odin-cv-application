@@ -4,15 +4,15 @@ import { useState } from "react";
 import AnotherDetail from "./AnotherDetail";
 import defaultDetails from "../assets/defaultDetails";
 
-function Form() {
+function Form({ setPage }) {
   const [allDetails, setAllDetails] = useState(
     JSON.parse(localStorage.getItem("allDetails")) || defaultDetails,
   );
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(allDetails);
     localStorage.setItem("allDetails", JSON.stringify(allDetails));
+    setPage("home");
   };
 
   return (
